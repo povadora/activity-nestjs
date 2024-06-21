@@ -7,5 +7,7 @@ import { ContactModule } from './contact/contact.module';
 
 @Module({
   imports: [UsersModule, ProfileModule, ContactModule],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}
